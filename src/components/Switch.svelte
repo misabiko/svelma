@@ -49,7 +49,7 @@
   user-select: none;
   display: inline-flex;
 
-  :global(&[disabled]) {
+  &:global([disabled]) {
     opacity: .5;
     cursor: not-allowed;
   }

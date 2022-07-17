@@ -62,6 +62,8 @@
                 <slot/>
             </span>
         </span>
+        <!-- svelte-ignore a11y-missing-attribute -->
+        <!-- svelte-ignore a11y-missing-content -->
         <a  role="button"
             class="tag is-delete {size}"
             class:is-rounded={rounded}
@@ -79,6 +81,8 @@
             <slot/>
         </span>
         {#if closable}
+            <!-- svelte-ignore a11y-missing-attribute -->
+            <!-- svelte-ignore a11y-missing-content -->
             <a  role="button"
                 class="delete is-small"
                 {disabled}
