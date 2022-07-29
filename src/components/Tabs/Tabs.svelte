@@ -28,10 +28,11 @@
    * */
   export let style = ''
 
+  //TODO Have sveld support export const setActive = index => active = index
   /** Sets active tab index, can be used when bind:active cannot be used
    * @svelte-prop {Function} [setActive]
    * */
-  export const setActive = index => active = index;
+  export function setActive(index) {return active = index};
 
   // deferred assignment of active variable, to avoid triggering infinite reactive loop
   // during changeActiveTab, holds previous active value

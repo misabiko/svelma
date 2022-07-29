@@ -24,7 +24,8 @@
   "main": "dist/index.js",
   "files": [
     "dist",
-    "src"
+    "src",
+    "types"
   ],
   "peerDependencies": {
     "bulma": "^0.9.3"
@@ -53,6 +54,7 @@
     "semantic-release": "^18.0.1",
     "sirv-cli": "^2.0.1",
     "standard-version": "^9.3.2",
+    "sveld": "^0.17.2",
     "svelte": "^3.44.3",
     "svelte-preprocess": "^4.10.1",
     "wait-for-localhost-cli": "^3.0.0"
@@ -72,5 +74,6 @@
   "homepage": "https://github.com/c0bra/svelma#readme",
   "directories": {
     "doc": "docs"
-  }
+  },
+  "types": "./types/index.d.ts"
 }

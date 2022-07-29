@@ -6,6 +6,7 @@ import svelte from 'rollup-plugin-svelte'
 import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 import css from 'rollup-plugin-css-only'
+import sveld from "sveld";
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -41,6 +42,8 @@ export default {
 
     // production && analyze(),
     production && bundleSize(),
+
+	sveld({ glob: true }),
   ],
   watch: {
     clearScreen: false,
